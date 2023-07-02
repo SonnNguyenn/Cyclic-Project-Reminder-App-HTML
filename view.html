@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/view.css">
+    </head>
+
+    <body>
+<!-- View Projects Screen -->
+<div class="container">
+    <h1>My Projects</h1>
+    <ul class="project-list">
+      <li class="project-item">
+        <a href="details.html" class="project-link">
+          <h2>Project 1</h2>
+          <p>Cycle: 30 days</p>
+          <p>Activities: 5</p>
+          <p>Tasks: 10</p>
+          <p>Tags: 2</p>
+        </a>
+      </li>
+      <li class="project-item">
+        <a href="details.html" class="project-link">
+          <h2>Project 2</h2>
+          <p>Cycle: 14 days</p>
+          <p>Activities: 3</p>
+          <p>Tasks: 7</p>
+          <p>Tags: 1</p>
+        </a>
+      </li>
+      <!-- Add more project items as needed -->
+    </ul>
+    <div class="button-container">
+      <a href="home.html" class="button" onclick="goBack()">Go Back</a>
+    </div>
+  </div>  
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    </body>
+</html>

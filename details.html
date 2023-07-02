@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/details.css">
+</head>
+
+<body>
+    <!-- Project Details Screen -->
+  <div class="container">
+    <h1>Project Details</h1>
+    <div class="details-card">
+      <h2>Project Name: Project 1</h2>
+      <p>Cycle Duration: 30 days</p>
+      <p>Cycle Frequency: 7 days</p>
+      <h2>Activities</h2>
+      <ul>
+        <li>Activity 1: Grow the seedlings</li>
+        <li>Activity 2: Order textbooks</li>
+        <li>Activity 3: Update LMS sites</li>
+      </ul>
+      <h2>Tasks</h2>
+      <ul>
+        <li>Task 1: Confirm textbook order</li>
+        <li>Task 2: Write assignment</li>
+        <li>Task 3: Set exam date</li>
+      </ul>
+      <h2>Tags</h2>
+      <ul>
+        <li>Tag 1: Important</li>
+        <li>Tag 2: High Priority</li>
+      </ul>
+      <h2>Reminders</h2>
+      <ul>
+        <li>Reminder 1: Push notification for Activity 1</li>
+        <li>Reminder 2: Reminder list for Task 2</li>
+      </ul>
+      <h2>Notes</h2>
+      <p>Here are some project notes...</p>
+    </div>
+    <div class="button-container">
+      <a href="edit.html" class="button">Edit Project</a>
+      <a href="#" class="button">Delete Project</a>
+      <a href="view.html" class="button" onclick="goBack()">Go Back</a>
+    </div>
+  </div>   
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

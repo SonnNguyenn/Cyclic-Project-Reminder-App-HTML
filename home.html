@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Cyclic Project Reminder App</title>
+  
+</head>
+<body>
+ <header class="header">
+    <div class="left-section">
+      <h1> Welcome, FT1 </h1>
+    </div>
+
+    <div class="middle-section">
+      <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <button class="login-button">
+        <i class="fab fa-apple"></i> Login
+      </button>
+      <button class="signup-button">
+        <i class="fab fa-apple"></i> Sign Up
+      </button>
+    </div>
+
+ </header>
+
+ <nav class="sidebar">
+
+  <div class="sidebar-link"> 
+    <img src="icons/home1.jpg" >
+    <div>Home</div>
+  </div>
+
+  <div class="sidebar-link">
+    <img src="icons/notification.png" >
+    <div>Notification</div>
+  </div>
+
+  <div class="sidebar-link">
+    <img src="icons/report-icon.png" >
+    <div>Report</div>
+  </div>
+
+  <div class="sidebar-link">
+    <img src="icons/setting-icon.png" >
+    <div>Settings</div>
+  </div>
+
+  <div class="sidebar-link">
+    <img src="icons/signout-icon.png" >
+    <div>Log Out</div>
+  </div>
+
+  <div class="sidebar-link">
+    <img src="">
+    <div></div>
+  </div>
+
+ </nav>
+
+  <!-- Home Screen -->
+  <!-- 
+     <div class="container">
+    <h1 class="project-title">Cyclic Project Reminder</h1>
+  
+
+    <div class="progress-title">
+      <p><strong>Cycle Progress</strong></p>
+    </div>
+    
+    <div class="project-card">
+      <h2>Project 1</h2>
+      <p>Cycle: 30 days</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;">
+          <span class="progress-label">60% completion</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <h2>Project 2</h2>
+      <p>Cycle: 14 days</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 90%;">
+          <span class="progress-label">90% completion</span>
+        </div>
+      </div>
+    </div>    
+
+    <div class="button-container">
+      <button class="create-project-button">
+      <a href="create.html" class="create-project-text">Create New Project</a> 
+        <div class="tooltip">Create your new project</div> </button>
+      
+        <button class="view-project-button">
+      <a href="view.html" class="view-project-text">View Projects</a> 
+      <div class="tooltip">View all your projects</div>
+    </button>
+    </div>
+  </div>
+
+   -->
+ 
+
+
+</body>
+<!-- Calender Function -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      
+    });
+
+    calendar.render();
+  });
+</script>
+</html>

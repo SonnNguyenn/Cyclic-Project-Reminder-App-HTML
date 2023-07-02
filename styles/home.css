@@ -1,0 +1,161 @@
+ /* CSS Styles for the App */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(220, 238, 244);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+
+  .project-title {
+    font-family: 'Anton', sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 45px; /* Adjust the value to control the spacing */
+    margin-top: 50px;
+  }
+  .create-project-button, .view-project-button {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+  }
+  
+
+  .create-project-text, .view-project-text {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .button {
+    
+  }
+ .tooltip {
+    position: absolute;
+    bottom: -40px; /* Adjust the value as needed to position the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    background-color: #afa8a8;
+    color: #fff;
+    padding: 5px;
+    font-size: 11px;
+    transition: opacity 0.1s;
+    white-space: nowrap;
+  }
+
+  .create-project-button:hover .tooltip, .view-project-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .project-card {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .project-card h2 {
+    margin-top: 0;
+  }
+
+  .project-card p {
+    margin-bottom: 5px;
+  }
+
+  .project-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .project-item {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .project-item:hover {
+    background-color: #e0e0e0;
+  }
+
+  .details-card {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .details-card h2 {
+    margin-top: 0;
+  }
+
+  .details-card ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .details-card li {
+    margin-bottom: 5px;
+  }
+  .project-card {
+  margin-bottom: 20px;
+}
+.progress-title  {
+font-size: 18px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background-color: green;
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+  }
+  
+.progress-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  

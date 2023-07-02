@@ -1,0 +1,95 @@
+
+.container {
+    max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div1  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+.div-projectname input[type="text"] {
+    width: 150px; /* Adjust the width as desired */
+}
+
+.div2 {
+    text-align: center;
+}
+
+.div-activitybox {
+    display: inline-block;
+}
+
+.div-activitybox input[type="text"] {
+    display: block;
+    margin-bottom: 10px; /* Optional: Adjust the spacing between the rows */
+}
+
+input[type="text"] {
+    width: 200px; /* Adjust the width as desired */
+}
+
+.div3 {
+    text-align: center;
+}
+.div-taskbox {
+    display: inline-block;
+}
+
+.div-taskbox input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.div4 {
+    text-align: center;
+}
+.div-tagbox {
+    display: inline-block;
+}
+
+.div-tagbox input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.div5 {
+    text-align: center;
+}
+.div-reminderbox {
+    display: inline-block;
+}
+
+.div-reminderbox input[name="reminder2"] {
+   margin-left: -20px;
+}
+
+.div6 {
+    text-align: center;
+}
+
+.div-notebox {
+    display: inline-block;    
+}
+
+textarea[name="notes"] {
+    flex-grow: 1;
+    margin-top: -10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button-container [type="submit"] {
+    margin-right: 40px;
+}

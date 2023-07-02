@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyclic Project Reminder App</title>
+  <link rel="stylesheet" href="details.html">
+  <style>
+    /* CSS Styles for the App */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Project</h1>
+    <form>
+      <label for="project-name">Project Name:</label>
+      <input type="text" id="project-name" name="project-name" value="Project 1" required>
+      <label for="cycle-duration">Cycle Duration (in days):</label>
+      <input type="number" id="cycle-duration" name="cycle-duration" value="30" required>
+      <label for="cycle-frequency">Cycle Frequency (in days):</label>
+      <input type="number" id="cycle-frequency" name="cycle-frequency" value="7" required>
+      <h2>Activities</h2>
+      <input type="text" name="activity" value="Grow the seedlings" required>
+      <input type="text" name="activity" value="Order textbooks">
+      <!-- Add more activity input fields as needed -->
+      <h2>Tasks</h2>
+      <input type="text" name="task" value="Confirm textbook order" required>
+      <input type="text" name="task" value="Write assignment">
+      <!-- Add more task input fields as needed -->
+      <h2>Tags</h2>
+      <input type="text" name="tag" value="Important" required>
+      <input type="text" name="tag" value="High Priority">
+      <!-- Add more tag input fields as needed -->
+      <h2>Reminders</h2>
+      <input type="checkbox" name="reminder" checked> Reminder for Activity 1<br>
+      <input type="checkbox" name="reminder"> Reminder for Task 2<br>
+      <!-- Add more reminder checkboxes as needed -->
+      <h2>Notes</h2>
+      <textarea name="notes">Lecture slides available online</textarea>
+      <div class="button-container">
+        <input type="submit" value="Save Changes" class="button">
+        <a href="details.html" class="button">Cancel</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
